@@ -1,0 +1,187 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: serif;
+}
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei" "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+.textcenter{
+  text-align: center;
+  padding: auto 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.circle{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #51bbfe;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* header */
+
+/* pic-jpg */
+.pic1{
+  z-index: 5;
+  width: 20%;
+  margin-bottom: -25%;
+  opacity: 0.9;
+  animation-delay: 2.5s;
+  position:absolute;
+  left: 60%;
+  transition: all 0.3s ease-in-out;
+}
+.pic1:hover{
+  margin-bottom: -24%;
+}
+.pic2{
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  left: -10%;
+  bottom: -40%;
+  opacity: 0.9;
+  z-index: 4;
+  animation-delay: 2s;
+  animation: moveUpDown 3s linear infinite;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.pic3{
+  width: 610px;
+  height: 512px;
+  position: absolute;
+  right: -25%;
+  bottom: 0;
+  opacity: 0.9;
+  z-index: 5;
+  animation-delay: 2s;
+  transition: all 0.3s ease-in-out;
+}
+.pic3:hover{
+  right: -15%;
+}
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #192a2e;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header .overlay .title{
+  top: 10%;
+  margin-left: 15%;
+}
+header .overlay span {
+  z-index: 4;
+  margin: 0;
+  margin-top: -30%;
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 2px rgba(0, 0, 255,0.8),-2px -1px rgba(255, 0, 0,0.8), 30px 20px rgba(255, 255, 255, 0.03);
+}
+
+/* parallax */
+header .parallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .parallax div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header .parallax .one {
+  background-image: url("../svg/mountains-1.svg");
+  z-index: 4;
+}
+header .parallax .two {
+  background-image: url("../svg/mountains-2.svg");
+  z-index: 3;
+}
+header .parallax .three {
+  background-image: url("../svg/mountains-3.svg");
+  z-index: 2;
+}
+header .parallax .four {
+  background-image: url("../svg/mountains-4.svg");
+  z-index: 1;
+}
+header .parallax .five {
+  background-image: url("../svg/mountains-5.svg");
+  z-index: 0;
+}
+
+
+/* scroll-down */
+.scroll-down {
+  z-index: 5;
+  position: absolute;
+  bottom: 5%;
+  left: 70%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  color: #fff;
+  animation: blink 1s infinite;
+  transition: all 0.2s ease;
+}
+.scroll-down:hover{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* link-info */
