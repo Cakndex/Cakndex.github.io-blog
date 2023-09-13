@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: serif;
+  scroll-behavior: smooth
 }
 body {
   margin: 0;
@@ -52,7 +53,7 @@ body {
   left: -10%;
   bottom: -40%;
   opacity: 0.9;
-  z-index: 4;
+  z-index: 5;
   animation-delay: 2s;
   animation: moveUpDown 3s linear infinite;
 }
