@@ -1,0 +1,36 @@
+
+#introduce .body-text p{
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    color: #45636B;
+}
+.body-text{
+    padding: 100px 0;
+    background-color: #fff;
+    color: #ffffff;
+    background-color: #25373C;
+    font-size: 18px;
+    min-height: 40vh;
+    text-align: center;
+}
+
+.body-text h2{
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+.body-text .intro-t{
+    position: relative;
+    height: 30vh;
+    
+}
+
+@media (max-width: 900px){
+
+    .body-text p{
+        width: 100%;
+    }
+
+}

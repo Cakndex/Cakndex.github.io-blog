@@ -7,8 +7,11 @@
   <!-- favicon -->
   <link rel="icon" href="./favicon/favicon.ico" type="Image/x-icon">
   <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/section-body.css">
-  <link rel="stylesheet" href="./css/导航.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/introduce.css">
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/intro.css">
   <!-- 实现动画效果 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -57,7 +60,7 @@
     <!-- favicon -->
     <img src="./pic/favicon.png" alt="" style="margin-left: 10%;margin-top: 7%;">
     <!-- 技术栈 -->
-    <div id="card" class="animate__animated animate__fadeInUp cover" style="z-index: 5;animation-delay: 5s;animation-duration: 2s;" >
+    <div id="card" class="animate__animated animate__fadeInUp cover" style="z-index: 5;animation-delay: 0.5s;animation-duration: 2s;" >
         <h1>My🤡 技术栈🚀</h1>
         <div class="card">
             <div class="part">
@@ -124,17 +127,34 @@
 </section>
 <section id="introduce">
     <div class="body-text">
+        <div class="intro-t">
+            <div class="profile-card-wrap">
+            <input id="check" type="checkbox" class="check"><label for="check" class="toggle"> + </label>
+            <div class="percontent" data-text="个人简介">
+                <div class="title">@htmleaf</div>
+                <p>欢迎来到jQuery之家-www.htmleaf.com。jQuery之家-自由分享jQuery、HTML5、CSS3的插件库。</p>
+            </div>
+            <div class="link-info">
+                <div class="social">
+                    <a class="link fb" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="link tw" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="link cp" href="#" target="_blank"><i class="fa fa-codepen"></i></a>
+                    <a class="link pi" href="#" target="_blank"><i class="fa fa-weibo"></i></a>
+                    <a class="link li" href="#" target="_blank"><i class="fa fa-weixin"></i></a>
+                    <a class="link yt" href="#" target="_blank"><i class="fa fa-qq"></i></a>
+                    <a class="link gp" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+                </div>
+                <div class="photo"></div>
+            </div>
+            </div>
+        </div>
         
-        <h2>Body Text</h2>
-        <p data-300-center-top="transform: scale(0.8); opacity: 0" data-300-center-center="transform: scale(1); opacity: 1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
-        </p>
-        <p data-200-center-top="transform: scale(0.8); opacity: 0" data-200-center-center="transform: scale(1); opacity: 1">
+        <!-- <p data-200-center-top="transform: scale(0.8); opacity: 0" data-200-center-center="transform: scale(1); opacity: 1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
         </p>
         <p data-100-center-top="transform: scale(0.8); opacity: 0" data-100-center-center="transform: scale(1); opacity: 1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
-        </p>
+        </p> -->
     </div>
 </section>
 </body>
