@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./css/introduce.css">
   <link rel="stylesheet" href="./css/font-awesome.css">
   <link rel="stylesheet" href="./css/intro.css">
+  <link rel="stylesheet" href="./css/project.css">
+  <link rel="stylesheet" href="./css/life.css">
   <!-- 实现动画效果 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -24,7 +26,6 @@
   <img class="pic2 " src="./pic/pic2.png" alt="" >
   <!-- 加载 -->
   <img class="pic1 animate__animated animate__slideInUp" src="./pic/数据加载中.png" alt="">
-  <!-- 线稿二次元 -->
   <div class="overlay">
     <!-- 背景 -->
     <div class="parallax">
@@ -61,7 +62,7 @@
     <img src="./pic/favicon.png" alt="" style="margin-left: 10%;margin-top: 7%;">
     <!-- 技术栈 -->
     <div id="card" class="animate__animated animate__fadeInUp cover" style="z-index: 5;animation-delay: 0.5s;animation-duration: 2s;" >
-        <h1>My🤡 技术栈🚀</h1>
+        <h1><em> My🤡 技术栈🚀</em></h1>
         <div class="card">
             <div class="part">
             <canvas id="waterbubble1"></canvas>
@@ -98,27 +99,27 @@
         <ul id="hex">
           <li class="tr"><div class="clip"><a href="#shouye" class="content">
             <img src="./pic/二次元1.jpg" style="transform: scale(1.4) translateX(-10px) translateY(30px);" alt="" />
-            <h2 class="title" style="transform: translateX(10px) translateY(20px)">首页</h2>
+            <h2 class="title" style="transform:translateY(20px)">1.首页</h2>
           </a></div></li>
           <li class="tr"><div class="clip"><a href="#stack" class="content">
             <img src="./pic/二次元2.jpg" style="transform: scale(1.3);" alt="" />
-            <h2 class="title" style="transform: translateY(10px) translateX(5px)">技术栈</h2>
+            <h2 class="title" style="transform: translateY(10px) translateX(-5px)">2.技术栈</h2>
           </a></div></li>
-          <li class="tr"><div class="clip"><a href="#" class="content">
+          <li class="tr"><div class="clip"><a href="#introduce" class="content">
             <img src="./pic/二次元3.jpg" style="transform: scale(1.5) translateY(35px) translateX(-13px);" alt="" />
-            <h2 class="title" style="transform: translateY(15px)">个人介绍</h2>
+            <h2 class="title" style="transform: translateY(15px) translateX(-10px)">3.个人介绍</h2>
           </a></div></li>
           <li class="tr"><div class="clip"><a href="#" class="content">
             <img src="./pic/二次元4.jpg" style="transform: scale(1.4) translateX(10px) translateY(20px);" alt="" />
-            <h2 class="title" style="transform: translateY(15px)">项目经历</h2>
+            <h2 class="title" style="transform: translateY(15px) translateX(10px)">4.项目</h2>
           </a></div></li>
           <li class="tr"><div class="clip"><a href="#" class="content">
             <img src="./pic/二次元5.jpg" style="transform: scale(2) translateY(45px) translateX(-5px);" alt="" />
-            <h2 class="title" style="transform: translateY(15px) translateX(-5px)">大学生活</h2>
+            <h2 class="title" style="transform: translateY(15px) translateX(-20px)">5.大学生活</h2>
           </a></div></li>
           <li class="tr"><div class="clip"><a href="#" class="content">
             <img src="./pic/二次元6.jpg" style="transform: scale(1.3) translateY(20px) translateX(20px);" alt="" />
-            <h2 class="title" style="transform: translateY(20px) ">联系方式</h2>
+            <h2 class="title" style="transform: translateY(20px) translateX(10px)">6.笔记</h2>
           </a></div></li>
         </ul>
       </nav>
@@ -131,8 +132,14 @@
             <div class="profile-card-wrap">
             <input id="check" type="checkbox" class="check" checked="checked"><label for="check" class="toggle"> + </label>
             <div class="percontent" data-text="个人简介">
-                <div class="title">@htmleaf</div>
-                <p></p>
+                <div class="title">个人简介</div>
+                <p>Name&ensp;：刘云宇</p>
+                <p>From&ensp;：电子科技大学</p>
+                <p>Age&ensp;&ensp;: 19</p>
+                <p>profession：软件工程</p>
+                <p>Direction&ensp;：前端</p>
+                <p>Grade&ensp;: 大二</p>
+
             </div>
             <div class="link-info">
                 <div class="social">
@@ -155,6 +162,172 @@
         <p data-100-center-top="transform: scale(0.8); opacity: 0" data-100-center-center="transform: scale(1); opacity: 1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida in odio vel tincidunt. Fusce quis lectus accumsan, accumsan nibh sed, aliquet purus. In vitae velit eu est cursus malesuada sed ut nibh. Curabitur a leo enim.
         </p> -->
+    </div>
+    <!-- 生活 -->
+    <div id="project">
+        <div id="drag-container">
+            <div id="spin-container">
+            <img src="./img/轮播1.jpg" alt="">
+            <img src="./img/轮播2.jpg" alt="">
+            <img src="./img/轮播3.jpg" alt="">
+            <img src="./img/轮播4.jpg" alt="">
+            <img src="./img/轮播5.jpg" alt="">
+            <img src="./img/轮播6.jpg" alt="">
+            <img src="./img/轮播7.jpg" alt="">
+            <p>大学生活</p>
+            </div>
+            <div id="ground"></div>
+          </div>
+          <div id="music-container"></div>
+          <script>
+            var radius = 240; 
+        var autoRotate = true; 
+        var rotateSpeed = -60; 
+        var imgWidth = 120; 
+        var imgHeight = 170; 
+         
+        var bgMusicURL = '';
+        var bgMusicControls = true; 
+         
+        // ===================== start =======================
+        setTimeout(init, 100);
+         
+        var obox = document.getElementById('drag-container');
+        var ospin = document.getElementById('spin-container');
+        var aImg = ospin.getElementsByTagName('img');
+        var aVid = ospin.getElementsByTagName('video');
+        var aEle = [...aImg, ...aVid]; 
+         
+        ospin.style.width = imgWidth + "px";
+        ospin.style.height = imgHeight + "px";
+         
+        var ground = document.getElementById('ground');
+        ground.style.width = radius * 3 + "px";
+        ground.style.height = radius * 3 + "px";
+         
+        function init(delayTime) {
+          for (var i = 0; i < aEle.length; i++) {
+            aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+            aEle[i].style.transition = "transform 1s";
+            aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
+          }
+        }
+         
+        function applyTranform(obj) {
+          if(tY > 180) tY = 180;
+          if(tY < 0) tY = 0;
+         
+          obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
+        }
+         
+        function playSpin(yes) {
+          ospin.style.animationPlayState = (yes?'running':'paused');
+        }
+         
+        var sX, sY, nX, nY, desX = 0,
+            desY = 0,
+            tX = 0,
+            tY = 10;
+         
+        if (autoRotate) {
+          var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
+          ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
+        }
+         
+        if (bgMusicURL) {
+          document.getElementById('music-container').innerHTML += `
+        <audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
+        `;
+        }
+         
+        if (mobilecheck()) {
+          // ==================== Touch Events ====================
+          document.ontouchstart = function(e) {
+            clearInterval(obox.timer);
+            e = e || window.event;
+            var sX = e.touches[0].clientX,
+                sY = e.touches[0].clientY;
+         
+            this.ontouchmove = function(e) {
+              e = e || window.event;
+              var nX = e.touches[0].clientX,
+                  nY = e.touches[0].clientY;
+              desX = nX - sX;
+              desY = nY - sY;
+              tX += desX * 0.1;
+              tY += desY * 0.1;
+              applyTranform(obox);
+              sX = nX;
+              sY = nY;
+            }
+         
+            this.ontouchend = function(e) {
+              this.ontouchmove = this.ontouchend = null;
+              obox.timer = setInterval(function() {
+                desX *= 0.95;
+                desY *= 0.95;
+                tX += desX * 0.1;
+                tY += desY * 0.1;
+                applyTranform(obox);
+                playSpin(false);
+                if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+                  clearInterval(obox.timer);
+                  playSpin(true);
+                }
+              }, 17);
+            }
+         
+            // return false;
+          }
+        } else {
+          // ==================== Mouse Events ====================
+          document.onmousedown = function(e) {
+            clearInterval(obox.timer);
+            e = e || window.event;
+            var sX = e.clientX,
+                sY = e.clientY;
+         
+            this.onmousemove = function(e) {
+              e = e || window.event;
+              var nX = e.clientX,
+                  nY = e.clientY;
+              desX = nX - sX;
+              desY = nY - sY;
+              tX += desX * 0.1;
+              tY += desY * 0.1;
+              applyTranform(obox);
+              sX = nX;
+              sY = nY;
+            }
+         
+            this.onmouseup = function(e) {
+              this.onmousemove = this.onmouseup = null;
+              obox.timer = setInterval(function() {
+                desX *= 0.95;
+                desY *= 0.95;
+                tX += desX * 0.1;
+                tY += desY * 0.1;
+                applyTranform(obox);
+                playSpin(false);
+                if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+                  clearInterval(obox.timer);
+                  playSpin(true);
+                }
+              }, 13);
+            }
+         
+            return false;
+          }
+          document.onmousewheel = function(e) {
+            e = e || window.event;
+            var d = e.wheelDelta / 20 || -e.detail;
+            radius += d;
+            init(1);
+          };
+        }
+          </script>
     </div>
 </section>
 </body>

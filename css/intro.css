@@ -18,6 +18,7 @@
 	height:275px;
 	-webkit-perspective:800px;
 	        perspective:800px;
+	
 }
 .profile-card-wrap .percontent{
 	width:375px;
@@ -56,15 +57,23 @@
     top: 50%;
 }
 .profile-card-wrap .percontent .title{
-	font-size:24px;
+	font-size:2rem;
 	font-weight:500;
 	margin-bottom:30px;
+	padding-top: 15px;
+	letter-spacing: 3px;
+	color: #e1ddd0;
 }
 .profile-card-wrap .percontent p{
-	margin:0;
-	max-width:190px;
+	font-family: serif;
+	width: 60%;
+	font-size: 18px;
+	font-weight: 700;
 	line-height:24px;
-	text-align:center;
+	color: #ffffff;
+	transition: all 0.5s ease-in-out;
+    display: inline-block;
+    text-align: left;
 }
 .profile-card-wrap .link-info{
     position:absolute;

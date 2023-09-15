@@ -1,24 +1,20 @@
 
-#introduce .body-text p{
-    transition: all 0.5s ease-in-out;
-    width: 100%;
-    display: inline-block;
-    text-align: left;
-    color: #45636B;
-}
 .body-text{
+    display: inline-block;
     position: relative;
     padding: 100px 0;
     background-color: #fff;
     color: #ffffff;
-    background-color: #25373C;
+    background-color: rgb(37, 55, 60);
     font-size: 18px;
-    min-height: 40vh;
+    width: 55vw;
+    height: 60vh;
     text-align: center;
-    clip-path: polygon(0 0,60% 0,45% 100%,0 100%);
-    transition: all 0.6s ease-in-out;
+    clip-path: polygon(0 0,100% 0,80% 100%,0 100%);
+    transition: all 0.5s ease-in-out;
+    
 }
-.body-text::before,body.body-text::after {
+.body-text::before {
     content: ' ';
     position: absolute;
     left: 0;
@@ -30,13 +26,14 @@
 }
 .body-text::before{
     z-index: 0;
-    background-color: #45636B;
-    transition: 0.6s ease-out;
+    background-color:#223137;
+    /* opacity: 0.5; */
+    transition: 0.5s ease-out;
 }
 .body-text:hover{
     background-color: transparent;
 }
-.body-text:hover::before,.body-text:hover::before{
+.body-text:hover::before{
     width: 100%;
 }
 
