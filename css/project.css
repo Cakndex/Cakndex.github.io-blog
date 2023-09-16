@@ -6,5 +6,5 @@
     width:60vw;
     height: 60vh;
     clip-path: polygon(20% 0,100% 0,100% 100%,6.5% 100%);
-    background-color: pink;
+    background-color: rgb(232, 208, 208);
 }
