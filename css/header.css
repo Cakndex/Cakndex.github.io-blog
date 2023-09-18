@@ -33,17 +33,23 @@ body {
 
 /* pic-jpg */
 .pic1{
+  font-size: 2rem;
   z-index: 5;
-  width: 20%;
-  margin-bottom: -25%;
   opacity: 0.9;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
   position:absolute;
-  left: 60%;
-  transition: all 0.3s ease-in-out;
+  right: 10%;
+  bottom: 30%;
+  background-color: rgba(73, 107, 123,1);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fff;
+  text-shadow: 2px 2px #fd1755,-2px -1px #2bf2ec, 50px 20px rgba(255, 255, 255, 0.1);
+  transition: all 0.5s ease-in-out;
 }
 .pic1:hover{
-  margin-bottom: -24%;
+  background-color:rgba(255, 255, 255,0) ;
+  text-shadow: -2px -2px #fd1755,2px 1px #2bf2ec, 500px 20px rgba(255, 255, 255, 0.5);
 }
 .pic2{
   width: 1000px;

@@ -1,0 +1,14 @@
+#copyright {
+    z-index: -1;
+    position: inherit;
+    height: 50px;
+    line-height: 50px;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-family: Arial;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}

@@ -1,11 +1,13 @@
-
+#introduce{
+    background-color: #333;
+}
 .body-text{
     display: inline-block;
     position: relative;
     padding: 100px 0;
     background-color: #fff;
     color: #ffffff;
-    background-color: rgba(37, 55, 60,0.9);
+    background-color: rgba(37, 55, 60,0.8);
     font-size: 18px;
     width: 55vw;
     height: 60vh;
@@ -16,11 +18,11 @@
 .body-text::after {
     content: ' ';
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     width: 0;
     height: 100%;
-    background-color:#25373C;
+    background-color:#192d31;
     z-index: -1;
     transition: 0.3s ease-out;
 }
