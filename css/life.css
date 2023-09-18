@@ -8,6 +8,19 @@
   clip-path: polygon(20% 0,100% 0,100% 100%,6.5% 100%);
   background-color: rgb(232, 208, 208);
 }
+#project::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0 ;
+  height: 100%;
+  background-color: rgb(255, 177, 177);
+  transition: all 0.3s ease-out;
+}
+#project:hover::before{
+  width: 100%;
+}
 #drag-container, #spin-container {
 
   height: 100%;
